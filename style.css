@@ -1,6 +1,8 @@
+html, body { height: 100%; }
+
 body {
     background: #fAfAfA;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +15,14 @@ a.plain { color: inherit; }
 a.plain:hover,
 a.plain:hover .text-muted {
     color: #428BCA;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .page { margin: 40px auto; }
@@ -31,7 +41,7 @@ a.plain:hover .text-muted {
 .my-info {
     margin-top: 16px;
     text-align: right;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .job,
@@ -54,7 +64,7 @@ p:last-of-type {
 
 .attn {
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .skill-list {
@@ -67,3 +77,81 @@ p:last-of-type {
 .skill-list li:last-of-type { margin-bottom: 0; }
 
 .indent { margin-left: 1em; }
+
+
+/*
+    Theme - Dark
+*/
+.wowee h1, .wowee h2, .wowee h3 {
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.wowee h1 { font-size: 80px; }
+
+.wowee a {
+    color: inherit;
+    -webkit-transition: color 150ms ease;
+    -moz-transition: color 150ms ease;
+    transition: color 150ms ease;
+}
+.wowee a:hover { color: #95a5a6; }
+
+body.wowee {
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-family: Lato, sans-serif;
+    -webkit-animation: wowee 60s infinite alternate;
+    -moz-animation: wowee 60s infinite alternate;
+    animation: wowee 60s infinite alternate;
+}
+
+@-webkit-keyframes wowee {
+    0%   { background: #2c3e50; }
+    20%  { background: #2980b9; }
+    40%  { background: #27ae60; }
+    60%  { background: #f39c12; }
+    80%  { background: #e74c3c; }
+    100% { background: #8e44ad; }
+}
+
+@-moz-keyframes wowee {
+    0%   { background: #2c3e50; }
+    20%  { background: #8e44ad; }
+    40%  { background: #c0392b; }
+    60%  { background: #2980b9; }
+    80%  { background: #e67e22; }
+    100% { background: #27ae60; }
+}
+
+@keyframes wowee {
+    0%   { background: #2c3e50; }
+    20%  { background: #8e44ad; }
+    40%  { background: #c0392b; }
+    60%  { background: #2980b9; }
+    80%  { background: #e67e22; }
+    100% { background: #27ae60; }
+}
+
+
+
+@media print {
+    /*body { margin: 0; }*/
+    /*.page { margin: 0; }*/
+
+    .header,
+    .main,
+    .footer { margin-bottom: 35px; }
+
+    .job,
+    section {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .job:last-of-type,
+    section:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
