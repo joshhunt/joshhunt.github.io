@@ -18,8 +18,17 @@ a.plain:hover .text-muted {
 }
 
 .centered {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100%;
     text-align: center;
@@ -83,7 +92,7 @@ p:last-of-type {
     Theme - Dark
 */
 .wowee h1, .wowee h2, .wowee h3 {
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -92,7 +101,6 @@ p:last-of-type {
 .wowee a {
     color: inherit;
     -webkit-transition: color 150ms ease;
-    -moz-transition: color 150ms ease;
     transition: color 150ms ease;
 }
 .wowee a:hover { color: #95a5a6; }
@@ -102,20 +110,10 @@ body.wowee {
     color: #ecf0f1;
     font-family: Lato, sans-serif;
     -webkit-animation: wowee 60s infinite alternate;
-    -moz-animation: wowee 60s infinite alternate;
     animation: wowee 60s infinite alternate;
 }
 
 @-webkit-keyframes wowee {
-    0%   { background: #2c3e50; }
-    20%  { background: #2980b9; }
-    40%  { background: #27ae60; }
-    60%  { background: #f39c12; }
-    80%  { background: #e74c3c; }
-    100% { background: #8e44ad; }
-}
-
-@-moz-keyframes wowee {
     0%   { background: #2c3e50; }
     20%  { background: #8e44ad; }
     40%  { background: #c0392b; }
