@@ -1,20 +1,127 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Josh Hunt - Web Developer</title>
-        <link rel="stylesheet" href="bootstrap.css">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="initial-scale=1">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    </head>
 
-    <body class="wowee">
-        <div class="centered">
-            <div class="container">
-                <h1>Josh Hunt</h1>
-                <h2>Creates websites</h2>
-                <h2>Cofounded <a href="http://getshifts.co">Shifts</a></h2>
-                <h3>Say <a href="mailto:hi@joshhunt.is">hi@joshhunt.is</a></h3>
-            </div>
-        </div>
-    </body>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="robots" content="noindex">
+
+  <title>My site? - CodePen</title>
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,300italic,400italic'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Permanent+Marker'>
+
+  <style>* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+  font-weight: 300;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/desk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(45deg, #3a342a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #3a342a 0%, #9b4a1b 40%, #3a342a 100%);
+  z-index: 2;
+  opacity: 0.5;
+}
+.header__body {
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 1.08em;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+a {
+  position: relative;
+  color: #fed3bf;
+  text-decoration: none;
+  -webkit-transition: 150ms ease-in-out;
+          transition: 150ms ease-in-out;
+}
+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  height: 1px;
+  background: #fed3bf;
+  left: 0;
+  right: 0;
+  -webkit-transition: 150ms ease-in-out;
+          transition: 150ms ease-in-out;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+}
+a:hover {
+  opacity: 1 !important;
+}
+a:hover:after {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+nav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 3;
+}
+.marker {
+  font-family: 'Permanent Marker', cursive;
+}
+.small {
+  font-size: 0.3em;
+  line-height: 1.75;
+  margin-top: 0.3em;
+}
+p {
+  margin: 0;
+}</style>
+
+</head>
+
+<body>
+
+  <header>
+  <div class="header__body">
+    <p>
+      <span class="marker">Josh Hunt</span><br/>
+      <span>makes websites</span> 
+    </p>
+    <p class="small">
+      say <a href="mailto:hi@joshhunt.is">hi@joshhunt.is</a>
+    </p>
+  </div>
+  <div class="header__overlay"></div>
+</header>
+
+</body>
+
 </html>
