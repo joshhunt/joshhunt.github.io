@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="top">
+                <form class="search-form">
+                    <input type="text" class="search-field" placeholder="Search"></input>
+                </form>
+            </div>
+
+            <div class="searches">
+                <div class="search">
+                    <h2 class="search__title">
+                        About
+                    </h2>
+                    <p>
+                        This page uses the Stan search service to get a preview of potential content in the upcomming Stan streaming service.
+                    </p>
+
+                    <p>
+                        While Stan has not launched yet, certain services (such as search) are active (probably for testing) and are
+                        able to be used from public. As Stan hasnt launched yet, content is more than likely still being added and results here
+                        should not be interpreted as all that will be available in the public product.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="templates">
+            <div class="search">
+                <h2 class="search__title">
+                    <span class="search__count"></span> results for <span class="search__term"></span>
+                </h2>
+                <div class="search__results"></div>
+            </div>
+
+            <div class="show">
+                <img class="show__cover">
+            </div>
+
+        </div>
+    
+<script type="text/javascript">document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':8424/livereload.js?snipver=1" type="text/javascript"><\/script>')</script>
+</body>
+
+</html>

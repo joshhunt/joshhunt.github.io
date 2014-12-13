@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+#templates {
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  background: #212330;
+  color: #e6e7ee;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.top {
+  margin: 20px 0;
+}
+.search {
+  margin-bottom: 100px;
+}
+.search-field {
+  width: 100%;
+  font-size: 30px;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #3b3e54;
+  background: #2a2c3c;
+  -webkit-transition: 150ms;
+          transition: 150ms;
+  color: inherit;
+}
+.search-field:focus {
+  background: #323548;
+  border-color: #434660;
+}
+.search__results {
+  margin: -10px;
+  font-size: 0;
+}
+.show {
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+  min-width: 150px;
+  padding: 10px;
+}
+.show__cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #1a1c26;
+  -webkit-transition: 150ms;
+          transition: 150ms;
+  background: #1a1c26;
+}
+.show__cover:hover {
+  box-shadow: 0 5px 20px 2px #0d0e13;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+}
+a {
+  color: inherit;
+  font-weight: 600;
+  -webkit-transition: 150ms;
+          transition: 150ms;
+}
+a:hover {
+  color: #b3b6cb;
+}
+.loading {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #e6e7ee;
+  border-radius: 100%;
+  -webkit-animation: scaleout 1s infinite ease-in-out;
+          animation: scaleout 1s infinite ease-in-out;
+}
+@-webkit-keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
