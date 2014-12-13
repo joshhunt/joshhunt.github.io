@@ -94,7 +94,7 @@
         page = entries[_i];
         $show = $showTemplate.clone();
         $show.addClass('show--link');
-        pageLink = '/?group=' + encodeURIComponent(page.url) + '&groupName=' + page.title;
+        pageLink = '?group=' + encodeURIComponent(page.url) + '&groupName=' + page.title;
         $show.html("<a href='" + pageLink + "'>" + page.title + "</a>");
         $results.append($show);
       }
