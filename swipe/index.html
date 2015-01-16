@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            var getTransformProperty = function(node) {
+                var properties = [
+                    'transform',
+                    'WebkitTransform',
+                    'msTransform',
+                    'MozTransform',
+                    'OTransform'
+                ];
+                var p;
+                while (p = properties.shift()) {
+                    if (typeof node.style[p] != 'undefined') {
+                        return p;
+                    }
+                }
+                return false;
+            };
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/hammer.min.js"></script>
+        <script src="/script.js"></script>
+    </head>
+
+    <body>
+        <div class="frame">
+            <div class="table">
+                <div class="row">Boring row</div>
+                <div class="row swipeable">Swipe this row.</div>
+                <div class="row">Boring row</div>
+                <div class="row">Boring row</div>
+                <div class="row">Boring row</div>
+            </div>
+        </div>
+    
+<script type="text/javascript">document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':3826/livereload.js?snipver=1" type="text/javascript"><\/script>')</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.frame {
+  width: 300px;
+}
+.table {
+  border: 1px solid #001f3f;
+  background: #ff4136;
+}
+.row {
+  background: #fff;
+  border: 1px solid #85144b;
+  padding: 20px;
+}
+.row:nth-child(2) {
+  position: relative;
+  left: 0px;
+}
