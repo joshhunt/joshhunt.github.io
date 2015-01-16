@@ -11,21 +11,49 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+* {
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 .frame {
   width: 300px;
 }
 .table {
   border: 1px solid #001f3f;
-  background: #ff4136;
+  border-style: none solid;
 }
 .row {
-  background: #fff;
+  position: relative;
   border: 1px solid #85144b;
-  padding: 20px;
+  border-style: solid none;
+  margin-top: -1px;
+  overflow: hidden;
 }
-.row:nth-child(2) {
+.row__actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  text-align: right;
+}
+.row__body {
+  background: #fff;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+}
+.row__body:nth-child(2) {
   position: relative;
   left: 0px;
+}
+.row__button {
+  height: 100%;
+  border: none;
+  background: #fb4035;
+  color: #fff;
+  font-size: 14px;
+  padding: 19px;
 }
