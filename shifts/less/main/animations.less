@@ -1,0 +1,48 @@
+@color0:   hsl(0, 75%, 80%);
+@color5:   hsl(18, 75%, 80%);
+@color10:  hsl(36, 75%, 80%);
+@color15:  hsl(54, 75%, 80%);
+@color20:  hsl(72, 75%, 80%);
+@color25:  hsl(90, 75%, 80%);
+@color30:  hsl(108, 75%, 80%);
+@color35:  hsl(126, 75%, 80%);
+@color40:  hsl(144, 75%, 80%);
+@color45:  hsl(162, 75%, 80%);
+@color50:  hsl(180, 75%, 80%);
+@color55:  hsl(198, 75%, 80%);
+@color60:  hsl(216, 75%, 80%);
+@color65:  hsl(234, 75%, 80%);
+@color70:  hsl(252, 75%, 80%);
+@color75:  hsl(270, 75%, 80%);
+@color80:  hsl(288, 75%, 80%);
+@color85:  hsl(306, 75%, 80%);
+@color90:  hsl(324, 75%, 80%);
+@color95:  hsl(342, 75%, 80%);
+@color100: hsl(360, 75%, 80%);
+
+.cycle-colors-animation {
+    0% {   color: @color0; }
+    5% {   color: @color5; }
+    10% {  color: @color10; }
+    15% {  color: @color15; }
+    20% {  color: @color20; }
+    25% {  color: @color25; }
+    30% {  color: @color30; }
+    35% {  color: @color35; }
+    40% {  color: @color40; }
+    45% {  color: @color45; }
+    50% {  color: @color50; }
+    55% {  color: @color55; }
+    60% {  color: @color60; }
+    65% {  color: @color65; }
+    70% {  color: @color70; }
+    75% {  color: @color75; }
+    80% {  color: @color80; }
+    85% {  color: @color85; }
+    90% {  color: @color90; }
+    95% {  color: @color95; }
+    100% { color: @color100; }
+}
+
+@-webkit-keyframes cycle-colors { .cycle-colors-animation() }
+@keyframes         cycle-colors { .cycle-colors-animation() }

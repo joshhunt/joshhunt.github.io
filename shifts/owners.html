@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title>Shifts - App for your work roster</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="/build/css/main/style.css">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-50628217-1', 'rostergeni.us');
+          ga('send', 'pageview');
+        </script>
+
+        <script type="text/javascript">
+            var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+            Keen.configure({
+                projectId: "53647ab100111c7117000003",
+                writeKey: "6b1b859dd0de7b72fb33a7c8c3769f6713a7f7583ee07740e787d3c811daa69be96795af1028c03a2b82e1617f33c878d53f04cbbcaaa3cbf89baeebc174ebf71793f64fa968c1643aeaf4693f79c55ef8388f3085499758b1f069815170b1f0696260c710b13fd9d8124785f5c51a6b",
+            });
+        </script>
+
+        <script>
+            $(function() {
+                // Smooth scroll
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+
+                var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+                if(iOS) {
+                    document.body.classList.add('is-iOS');
+                }
+
+                $('form.subscribe').on('submit', function(ev) {
+                    ev.preventDefault();
+
+                    var $email = $('#emailField'),
+                        email = $email.val();
+
+                    if(email.length > 3 && email.indexOf('@') > -1) {
+                        Keen.addEvent("emails", {'email': email});
+                        $('.subscribe').addClass('subscribe--done');
+                    }
+
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div class="bg">
+            <div class="bg-backdrop">
+                <div class="container hero">
+                    <div class="header">
+                        <div class="logo">shifts</div>
+                    </div>
+                    <div class="main">
+                        <h1>Publish new rosters direct to their phone.</h1>
+                        <h2>Start syncing your shifts in late 2014.</h2>
+
+                        <h2><a class="underlined" href="#email">Be notified when we launch.</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Your roster online and on your phone, automatically.</h2>
+                        <p class="copy">Stop taking photos of the roster and start getting your shifts on your phone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row feature-wrapper">
+                    <div class="col-sm-4 feature-list feature-list--left">
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis reprehenderit vitae iste qui dolore earum ab illum eius sunt possimus!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-comments-o"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img class="img-responsive screenshot" src="/images/iphone1.png">
+                    </div>
+
+                    <div class="col-sm-4 feature-list feature-list--right">
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis reprehenderit vitae iste qui dolore earum ab illum eius sunt possimus!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis reprehenderit vitae iste qui dolore earum ab!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fa fa-ticket"></i>
+                            </div>
+                            <div class="feature__main">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Consectetur adipisicing elit. Expedita, quod, harum corporis!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg alt-bg">
+            <div class="section--inner bg-backdrop">
+                <div class="container">
+                    <a id="email"></a>
+
+                    <form class="subscribe">
+                        <label for="emailField">Register your interest and be notified when we launch later in 2014.</label>
+
+                        <div class="contain">
+                            <div class="row subscribe-form">
+                                <div class="col-sm-9">
+                                    <input type="email" id="emailField" placeholder="Email address" class="form-control subscribe__email">
+                                </div>
+                                <div class="col-sm-3">
+                                    <button class="btn btn-default subscribe__btn">Subscribe</button>
+                                </div>
+                            </div>
+                            <div class="row subscribe-thanks">
+                                <div class="col-sm-12">
+                                    <label>Thanks!</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section> </section>
+
+        <script>
+            var backgrounds = ['bg3', 'bg4'],
+                bgClass = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+            document.body.classList.add(bgClass);
+        </script>
+    </body>
+</html>
