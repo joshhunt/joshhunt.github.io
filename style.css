@@ -1,20 +1,30 @@
-html, body { height: 100%; }
-
+html,
 body {
-    background: #fAfAfA;
-    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+    font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     font-weight: 600;
 }
 
-a.plain { color: inherit; }
+a.plain {
+    color: inherit;
+}
 
 a.plain:hover,
 a.plain:hover .text-muted {
-    color: #428BCA;
+    color: #428bca;
 }
 
 .centered {
@@ -34,28 +44,35 @@ a.plain:hover .text-muted {
     text-align: center;
 }
 
-.page { margin: 40px auto; }
+.page {
+    margin: 40px auto;
+}
 
 .header,
 .main,
-.footer { margin-bottom: 50px; }
+.footer {
+    margin-bottom: 50px;
+}
 
 .header h1 {
-    font-size: 71px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
-.header h2 { font-size: 19px; }
+.header h2 {
+    font-size: 19px;
+}
 
 .my-info {
     margin-top: 16px;
     text-align: right;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .job,
 section {
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid #ebebeb;
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
@@ -72,7 +89,7 @@ p:last-of-type {
 }
 
 .attn {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -82,28 +99,39 @@ p:last-of-type {
     margin: 0;
 }
 
-.skill-list li { margin-bottom: .5em; }
-.skill-list li:last-of-type { margin-bottom: 0; }
+.skill-list li {
+    margin-bottom: 0.5em;
+}
+.skill-list li:last-of-type {
+    margin-bottom: 0;
+}
 
-.indent { margin-left: 1em; }
-
+.indent {
+    margin-left: 1em;
+}
 
 /*
     Theme - Dark
 */
-.wowee h1, .wowee h2, .wowee h3 {
+.wowee h1,
+.wowee h2,
+.wowee h3 {
     font-weight: 300;
     margin-bottom: 15px;
 }
 
-.wowee h1 { font-size: 80px; }
+.wowee h1 {
+    font-size: 80px;
+}
 
 .wowee a {
     color: inherit;
     -webkit-transition: color 150ms ease;
     transition: color 150ms ease;
 }
-.wowee a:hover { color: #95a5a6; }
+.wowee a:hover {
+    color: #95a5a6;
+}
 
 body.wowee {
     background: #2c3e50;
@@ -114,24 +142,46 @@ body.wowee {
 }
 
 @-webkit-keyframes wowee {
-    0%   { background: #2c3e50; }
-    20%  { background: #8e44ad; }
-    40%  { background: #c0392b; }
-    60%  { background: #2980b9; }
-    80%  { background: #e67e22; }
-    100% { background: #27ae60; }
+    0% {
+        background: #2c3e50;
+    }
+    20% {
+        background: #8e44ad;
+    }
+    40% {
+        background: #c0392b;
+    }
+    60% {
+        background: #2980b9;
+    }
+    80% {
+        background: #e67e22;
+    }
+    100% {
+        background: #27ae60;
+    }
 }
 
 @keyframes wowee {
-    0%   { background: #2c3e50; }
-    20%  { background: #8e44ad; }
-    40%  { background: #c0392b; }
-    60%  { background: #2980b9; }
-    80%  { background: #e67e22; }
-    100% { background: #27ae60; }
+    0% {
+        background: #2c3e50;
+    }
+    20% {
+        background: #8e44ad;
+    }
+    40% {
+        background: #c0392b;
+    }
+    60% {
+        background: #2980b9;
+    }
+    80% {
+        background: #e67e22;
+    }
+    100% {
+        background: #27ae60;
+    }
 }
-
-
 
 @media print {
     /*body { margin: 0; }*/
@@ -139,7 +189,9 @@ body.wowee {
 
     .header,
     .main,
-    .footer { margin-bottom: 35px; }
+    .footer {
+        margin-bottom: 35px;
+    }
 
     .job,
     section {
